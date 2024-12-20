@@ -1,4 +1,4 @@
-package Department;
+package humanResourse;
 
 import employee.Employee;
 
