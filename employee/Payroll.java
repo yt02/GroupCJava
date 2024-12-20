@@ -1,4 +1,4 @@
-package humanResourse;
+package employee;
 
 public class Payroll {
     
