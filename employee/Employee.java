@@ -1,31 +1,41 @@
 package employee;
 
-public class Employee {
+public class Employee{
+    private int id;
     private String name;
-    private int age;
-    private String designation;
     private double salary;
 
-    public Employee(String name) {
+    public Employee(int id,String name,double salary){
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+    }
+    
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void empAge(int empAge) {
-        age = empAge;
+    public double getSalary() {
+        return salary;
     }
 
-    public void empDesignation(String empDesig) {
-        designation = empDesig;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
-
-    public void empSalary(double empSalary) {
-        salary = empSalary;
-    }
-
-    public void printEmployee() {
-        System.out.println("Name:" + name);
-        System.out.println("Age:" + age);
-        System.out.println("Designation:" + designation);
-        System.out.println("Salary:" + salary);
+    
+    public String toString(){
+        return "Employee ID\t: "+id+"\nEmployee Name\t: "+name+"\nEmployee Salary : RM "+salary;
     }
 }
