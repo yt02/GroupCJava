@@ -18,10 +18,6 @@ public class Employee {
         designation = empDesig;
     }
 
-    public void empSalary(double empSalary) {
-        salary = empSalary;
-    }
-
     public void printEmployee() {
         System.out.println("Name:" + name);
         System.out.println("Age:" + age);
