@@ -1,7 +1,5 @@
 package Department;
 
-import employee.Employee;
-
 public class Department {
     private String name;
     private Employee[]employee = new Employee[10];
