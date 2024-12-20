@@ -1,4 +1,4 @@
-package Department;
+package humanResourse;
 
 public class Department {
     private String name;
