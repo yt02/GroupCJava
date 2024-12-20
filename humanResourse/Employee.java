@@ -1,5 +1,4 @@
-package employee;
-
+package humanResourse;
 
 public class Employee{
     private int id;
