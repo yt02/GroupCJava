@@ -4,7 +4,7 @@ import employee.Employee;
 public class Leave {
     public static void applyLeave(Employee employee, int leaveTaken) {
         int leaveBalance = employee.getLeaveBalance();
-        if (leaveTaken > 14) {
+        if (leaveTaken > leaveBalance) {
             double penalty = employee.getSalary() * 0.10;
             employee.setSalary(employee.getSalary() - penalty);
             System.out.println("Employee\t\t:" + employee.getName());

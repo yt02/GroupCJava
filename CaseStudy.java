@@ -35,10 +35,11 @@ public class CaseStudy {
         
         Scanner scan=new Scanner(System.in);
         for (Employee e : emp) {
-            System.out.println("Enter the number of holidays taken by employee " + e.getName() + ": ");
+            System.out.print("Enter the number of holidays taken by employee " + e.getName() + ": ");
             int holidaysTaken = scan.nextInt();
             Leave.applyLeave(e, holidaysTaken);
             System.out.println("Leave Balance for "+e.getName()+"   : "+e.getLeaveBalance());
+            System.out.println("---------------------------------");
         }
     }
 }
