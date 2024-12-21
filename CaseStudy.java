@@ -1,6 +1,7 @@
 import Leave.*;
 import employee.*;
 import humanResourse.*;
+import java.util.Scanner;
 
 public class CaseStudy {
     public static void main(String[]args){
@@ -30,9 +31,16 @@ public class CaseStudy {
         System.out.println("---------------------------------");
         System.out.println(d.getByID(1));
         
-        System.out.println("---------------------------------");        
-        Leave.applyLeave(e5, 15);
-        System.out.println("Leave Balance for "+e5.getName()+"   : "+e5.getLeaveBalance());
+        System.out.println("---------------------------------");   
+        
+        Scanner scan=new Scanner(System.in);
+        for (Employee e : emp) {
+            System.out.print("Enter the number of holidays taken by employee " + e.getName() + ": ");
+            int holidaysTaken = scan.nextInt();
+            Leave.applyLeave(e, holidaysTaken);
+            System.out.println("Leave Balance for "+e.getName()+"   : "+e.getLeaveBalance());
+            System.out.println("---------------------------------");
+        }
     }
 }
 
