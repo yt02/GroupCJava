@@ -1,5 +1,5 @@
-import employee.Employee;
-import humanResourse.Department;
+import humanResourse.*;
+import employee.*;
 
 public class CaseStudy {
     public static void main(String[]args){
@@ -11,6 +11,7 @@ public class CaseStudy {
         d.addEmp(e1);
         d.addEmp(e2);
         d.addEmp(e3);
+  
         
         Employee[]emp=d.getEmp(); 
         

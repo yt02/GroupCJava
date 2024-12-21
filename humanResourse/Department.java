@@ -1,4 +1,5 @@
 package humanResourse;
+import employee.Employee;
 
 public class Department {
     private String name;
